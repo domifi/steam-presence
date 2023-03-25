@@ -1,0 +1,10 @@
+version: "2"
+services:
+  steam-presence:
+    build: .
+    container_name: steam-presence
+    restart: unless-stopped
+    environment:
+      - USER_IDS=your-user-id
+      - STEAM_API_KEY=your-steam-key
+      - DISCORD_APPLICATION_ID=your-discord-key # optional
